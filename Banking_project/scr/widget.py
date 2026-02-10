@@ -9,9 +9,11 @@ def mask_account_card(input_date):
         mask_ = get_mask_account(numbers_date)
     else:
         mask_ = get_mask_card_number(numbers_date)
-    return names_date + mask_
+    return names_date+ ' ' + mask_
 
 def get_date(date):
     worker_date = date.split('T')
     year, month, day = worker_date[0].split('-')
-    return f'{day}-{month}-{year}'
+    return f'{day}.{month}.{year}'
+
+
