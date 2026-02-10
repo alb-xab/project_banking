@@ -1,7 +1,7 @@
 from scr.masks import get_mask_account, get_mask_card_number
 
 
-def mask_account_card(input_date):
+def mask_account_card(input_date: str) -> str:
 
     ''' Функция принимающая название счёта или карты и
      её номер и маркирующая их, чтобы затем вернуть'''
@@ -16,7 +16,7 @@ def mask_account_card(input_date):
     return names_date+ ' ' + mask_
 
 
-def get_date(date):
+def get_date(date: str) -> str:
 
     '''Функция для получения упрощённой даты из более подробного формата
     исключая тем самым точное время операции'''
